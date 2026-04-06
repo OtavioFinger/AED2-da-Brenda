@@ -1,1 +1,6 @@
-# Testando o bagulho doido ae
+# Documentação - Prática 1
+
+## Introdução
+
+Neste exercício, fomos 
+
