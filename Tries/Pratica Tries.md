@@ -23,4 +23,4 @@ Radix Tree: Compactar caminhos que tenham apenas um filho, reduzindo o número d
 
 R-Way Tree: mais usado quando alfabeto é pequeno (ex: dígitos 0-9).
 
-TST (Ternary Search Tree): Cada nó tem um caractere e no máximo 3 ponteiros. Tem melhor desempenho quando se trata de espaço.
+TST (Ternary Search Tree): Cada nó tem um caractere e no máximo 3 ponteiros. Tem melhor desempenho quando se trata de espaço. a
