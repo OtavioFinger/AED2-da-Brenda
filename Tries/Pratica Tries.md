@@ -1,8 +1,9 @@
 
 # Introdução
 
-As árvores tries.
+As árvores tries ou R-way trie são um tipo de estrutura de dados em que cada nó dessa árvore pode ter vários filhos, sendo n-ária. A chave para encontrar o dado está implicito na busca, chaves são encontradas a partir do caminho de busca, começando da raíz.
 
+*Chave: É um dado identificador que se usa para encontrar outros dados relacionados. Exemplo: Matrícula do aluno é a chave, usada para encontrar nome, notas e etc.*
 
 Complexidade: 
 *O(AK)*
@@ -23,4 +24,4 @@ Radix Tree: Compactar caminhos que tenham apenas um filho, reduzindo o número d
 
 R-Way Tree: mais usado quando alfabeto é pequeno (ex: dígitos 0-9).
 
-TST (Ternary Search Tree): Cada nó tem um caractere e no máximo 3 ponteiros. Tem melhor desempenho quando se trata de espaço. a
+TST (Ternary Search Tree): Cada nó tem um caractere e no máximo 3 ponteiros. Tem melhor desempenho quando se trata de espaço. 
