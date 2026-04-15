@@ -27,3 +27,17 @@ class Trie:
                 atual.filhos[letra] = TrieNode(letra)
             atual = atual.filhos[letra]
         atual.fimDaPalavra = True
+
+
+    def print(self, root = None, height=0): #tipo uma busca por profundidade pre order
+        if root is None:
+            root = self.root
+        
+        print(root.value.rjust(height)) # só pra printar
+        for key, node in root.filhos.items():
+            self.print(node, height + 1)
+
+trie = Trie()
+trie.inserir("otavio")
+trie.inserir("otario")
+trie.print()
