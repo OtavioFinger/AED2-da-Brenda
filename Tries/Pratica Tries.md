@@ -9,6 +9,7 @@ Complexidade:
 *O(AK)*
 *A = tamanho do alfabeto*
 *K = tamanho da chave*
+*Também há casos em que se for implementada somente com a inserção de uma letra por vez. Seu custo geral é O(K), representando o tamanho da palavra.*
 
 Resumo: Só compensa se tiver bastante espaço.
 
