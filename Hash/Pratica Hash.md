@@ -23,3 +23,5 @@ Vai pegar a chave e transformar em um índice.
 Comumente é um vetor, esse vetor pode ser de qualquer tipo.
 
 ## Probleminhas da Hash
+
+1. Alto consumo de memória, devido a alocação da tabela.
