@@ -36,3 +36,5 @@ Ficar a Frente: Mostrar que a abordagem é tão boa quanto as outras.
 Argumento da Troca: Transformar aos poucos qualquer solução na encontrada pelo Algoritmo Guloso, sem piorar a qualidade da solução.
 
 **Talvez?** Prova por Indução, Estrutural, Prova por Contradição.
+
+## Escalonamento de Intervalos
