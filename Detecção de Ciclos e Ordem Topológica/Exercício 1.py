@@ -15,3 +15,54 @@
 # Saída Esperada: O programa deve imprimir [INSTALAÇÃO LIBERADA] se o grafo for um
 # DAG (Direcionado Acíclico), ou [ERRO: DEPENDÊNCIA CIRCULAR DETECTADA]
 # caso o algoritmo esbarre em um vértice "Cinza" durante a recursão
+
+BRANCO = 0
+CINZA  = 1
+PRETO  = 2
+
+def dfs(vertice, grafo, cor):
+    cor[vertice] = CINZA
+
+    for vizinho in grafo[vertice]:
+        if cor[vizinho] == CINZA:
+            return True
+        if cor[vizinho] == BRANCO:
+            if dfs(vizinho, grafo, cor):
+                return True
+
+    cor[vertice] = PRETO
+    return False
+
+def verificar_repositorio(grafo):
+    cor = {}
+    for v in grafo:
+        cor[v] = BRANCO
+
+    for vertice in grafo:
+        if cor[vertice] == BRANCO:
+            if dfs(vertice, grafo, cor):
+                print("[ERRO: DEPENDÊNCIA CIRCULAR DETECTADA]")
+                return
+
+    print("[INSTALAÇÃO LIBERADA]")
+
+
+# Grafo SEM ciclo: A->B->C
+grafo_dag = {
+    "A": ["B"],
+    "B": ["C"],
+    "C": [],
+}
+
+# Grafo COM ciclo: A->B->C->A
+grafo_ciclico = {
+    "A": ["B"],
+    "B": ["C"],
+    "C": ["A"],
+}
+
+print("\nTeste 1 DAG (Direcionado Acíclico):")
+verificar_repositorio(grafo_dag)
+
+print("\nTeste 2 (Ciclo A->B->C->A):")
+verificar_repositorio(grafo_ciclico)

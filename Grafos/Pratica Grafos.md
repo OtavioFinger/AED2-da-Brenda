@@ -66,4 +66,4 @@ Peso pode ser custo, tempo, distância,etc.
 
 Em vez de 0 e 1, agora teremos o próprio valor de custo do Nodo X para Y.
 
-<img src="https://medium.com/@paulomartins_10299/grafos-representa%C3%A7%C3%A3o-e-implementa%C3%A7%C3%A3o-f260dd98823d" width="300" height="200" alt="Grafos — representação e implementação por Paulo Martins">
+<img src="image-1.png" width="400" height="300" alt="Grafos — representação e implementação por Paulo Martins">
